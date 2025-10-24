@@ -1,0 +1,24 @@
+.root {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	width: 100%;
+	padding: 0 var(--space-md);
+}
+.title {
+	font-size: var(--text-xl);
+	font-weight: 700;
+	color: var(--text);
+	margin: 0 0 6px 0;
+}
+.description {
+	font-size: var(--text-sm);
+	color: var(--muted);
+	margin: 0;
+}
+
+@media (min-width: 640px) {
+		.root { flex-direction: row; align-items: center; justify-content: space-between; }
+		.title { margin: 0; }
+}
